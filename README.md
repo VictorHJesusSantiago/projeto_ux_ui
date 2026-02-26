@@ -1,80 +1,248 @@
-<div align="center">   <br />   <h1 style="font-size: 3em; margin-bottom: 0; color: #2e64a1;">     ♿️ AcessoTrip   </h1>      <strong style="font-size: 1.2em; color: #555;">     Protótipo de UX/UI para Turismo Acessível   </strong>      <br /> 
+<div align="center">
 
-  <p style="font-size: 1.1em; max-width: 700px;">     Uma plataforma colaborativa, desenvolvida como protótipo de alta fidelidade (HTML/CSS/JS), que permite a pessoas com deficiência planejar, avaliar e compartilhar experiências de viagens acessíveis, reduzindo barreiras e promovendo a autonomia.   </p>
+# ♿ AcessoTrip
 
-  <p>     <img src="https://img.shields.io/badge/status-Protótipo%20Funcional-green?style=for-the-badge" alt="Status do Projeto: Protótipo Funcional">     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">     <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">     <img src="https://img.shields.io/badge/Mapbox-000000?style=for-the-badge&logo=mapbox&logoColor=white" alt="Mapbox">   </p>
+**Protótipo de Alta Fidelidade para Turismo Acessível**
+
+<br>
+
+Uma plataforma colaborativa que permite a pessoas com deficiência planejar,
+avaliar e compartilhar experiências de viagens acessíveis — reduzindo barreiras
+e promovendo autonomia desde a concepção do design.
+
+<br>
+
+![Status](https://img.shields.io/badge/status-Protótipo%20Funcional-green?style=for-the-badge)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Mapbox](https://img.shields.io/badge/Mapbox-000000?style=for-the-badge&logo=mapbox&logoColor=white)
+![WCAG](https://img.shields.io/badge/WCAG-2.1%20AA-005A9C?style=for-the-badge)
 
 </div>
 
-📖 Sobre o Projeto
-O AcessoTrip nasceu como um Projeto Final de UX/UI focado em resolver um problema real e frustrante: a dificuldade que pessoas com deficiência (PCD) enfrentam ao tentar planear viagens.
+---
 
-A metodologia utilizada foi o Design Centrado no Utilizador (DCU). O projeto não começou pelo código, mas sim pela investigação e empatia, através da criação de Personas e Jornadas de Utilizador.
+## 📚 Tabela de Conteúdos
 
-O resultado é este protótipo funcional de alta fidelidade que simula uma aplicação web responsiva (Mobile-first, com adaptação para Desktop), focada em acessibilidade desde a sua concepção.
+> Navegue rapidamente pelas seções do projeto.
 
-O Problema Central (As Dores)
-Muitos sites e apps de turismo não trazem informações precisas sobre acessibilidade. Pessoas com deficiência enfrentam frustrações constantes, como:
+| # | Seção |
+|:-:|:------|
+| 1 | [📖 Sobre o Projeto](#-sobre-o-projeto) |
+| 2 | [😓 O Problema Central](#-o-problema-central) |
+| 3 | [👥 As Personas](#-as-personas-o-coração-do-ux) |
+| 4 | [✨ Funcionalidades do Protótipo](#-funcionalidades-do-protótipo) |
+| 5 | [🛠️ Stack Tecnológica](#️-stack-tecnológica) |
+| 6 | [♿ Foco em Acessibilidade](#-foco-em-acessibilidade-e-inclusão) |
+| 7 | [💡 Notas de Arquitetura](#-notas-de-arquitetura-frontend) |
+| 8 | [🚀 Como Executar](#-como-executar) |
+| 9 | [📂 Estrutura de Pastas](#-estrutura-de-pastas) |
+| 10 | [👨‍💻 Autor](#-autor) |
+| 11 | [📄 Licença](#-licença) |
 
-Informações Enganosas: "Rampas falsas" (rampas muito inclinadas ou que terminam em degraus) e banheiros ditos "adaptados" que não possuem espaço de manobra.
+---
 
-Exclusão Digital: Sites e apps que não são compatíveis com leitores de tela, ou conteúdo de vídeo sem legendas ou interpretação em Libras.
+## 📖 Sobre o Projeto
 
-Falta de Confiança: O medo de chegar ao destino e não ter autonomia, dependendo da "boa vontade" ou da empatia de prestadores de serviço.
+> **AcessoTrip** nasceu como um **Projeto Final de UX/UI** com o objetivo de resolver um problema real e frustrante: a dificuldade que pessoas com deficiência (PCD) enfrentam ao tentar planejar viagens.
 
-👥 As Personas (O Coração do UX)
-O design foi guiado por três personas principais, cada uma representando um espectro de acessibilidade.
+A metodologia utilizada foi o **Design Centrado no Usuário (DCU)**. O projeto não começou pelo código — começou pela investigação e empatia, através da criação de **Personas** e **Jornadas de Usuário**, garantindo que cada decisão de design fosse orientada por uma necessidade real.
 
-<div style="width: 100%; overflow-x: auto;">   <table width="100%" style="border-collapse: collapse; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">     <thead style="background-color: #2e64a1; color: white;">       <tr>         <th style="padding: 12px 15px; text-align: left;">Persona</th>         <th style="padding: 12px 15px; text-align: left;">Perfil</th>         <th style="padding: 12px 15px; text-align: left;">Dores Principais</th>         <th style="padding: 12px 15px; text-align: left;">Funcionalidade-Chave</th>       </tr>     </thead>     <tbody style="background-color: #fff; color: #333;">       <tr style="border-bottom: 1px solid #ddd; background-color: #f9f9f9;">         <td style="padding: 12px 15px;"><strong>Mariana, 32</strong></td>         <td style="padding: 12px 15px;">Cadeirante</td>         <td style="padding: 12px 15px;">Rampas falsas, banheiros inadaptados, informação visual enganosa.</td>         <td style="padding: 12px 15px;">Fotos reais e verificadas pela comunidade (na <code>tela-local</code>).</td>       </tr>       <tr style="border-bottom: 1px solid #ddd;">         <td style="padding: 12px 15px;"><strong>Eduardo, 45</strong></td>         <td style="padding: 12px 15px;">Deficiente Visual</td>         <td style="padding: 12px 15px;">Sites e apps sem rótulos (não semânticos), incompatíveis com leitores de tela.</td>         <td style="padding: 12px 15px;">Uso correto de tags ARIA e formulários acessíveis (avaliação por estrelas).</td>       </tr>       <tr style="background-color: #f9f9f9;">         <td style="padding: 12px 15px;"><strong>Ana Luiza, 27</strong></td>         <td style="padding: 12px 15px;">Deficiente Auditiva</td>         <td style="padding: 12px 15px;">Vídeos sem legendas, guias que falam de costas, falta de comunicação visual.</td>         <td style="padding: 12px 15px;">Abas de acessibilidade (ex: "Auditiva") e foco em comunicação textual (posts, avaliações).</td>       </tr>     </tbody>   </table> </div>
+O resultado é um **protótipo funcional de alta fidelidade** que simula uma aplicação web responsiva, construída com abordagem **Mobile-First** e adaptação completa para Desktop, com acessibilidade como requisito central desde a sua concepção.
 
-✨ Funcionalidades Principais (Protótipo)
-O protótipo implementa 5 telas principais e diversas funcionalidades de acessibilidade e inclusão:
+---
 
-1. Tela Inicial: Apresenta a pesquisa principal com Busca por Voz (simulada) e filtros por tipo de deficiência (Física, Visual, Auditiva, Cognitiva).
+## 😓 O Problema Central
 
-2. Filtros de Inclusão: Expande o conceito de acessibilidade para incluir necessidades sociais e alimentares, como filtros para locais Veganos, Sem Glúten e LGBTQ+ Friendly.
+> Pessoas com deficiência enfrentam barreiras constantes que sites e apps de turismo convencionais ignoram.
 
-3. Tela de Resultados (Responsiva):
+| Barreira | Descrição do Problema |
+|:---------|:----------------------|
+| 🪜 **Informações Enganosas** | "Rampas falsas" (muito inclinadas ou que terminam em degraus) e banheiros declarados "adaptados" sem espaço real de manobra. |
+| 🖥️ **Exclusão Digital** | Sites e apps não compatíveis com leitores de tela, vídeos sem legendas e ausência de interpretação em Libras. |
+| 😟 **Falta de Confiança** | O medo de chegar ao destino sem autonomia, dependendo da boa vontade de prestadores de serviço despreparados. |
 
-Mobile: Permite alternar entre Mapa Colaborativo (com pins coloridos) e Modo Lista, essencial para leitores de tela.
+---
 
-Desktop: Exibe o Mapa e a Lista lado a lado, aproveitando o espaço da tela.
+## 👥 As Personas — O Coração do UX
 
-4. Tela do Local: O núcleo da confiança. Exibe fotos reais enviadas por utilizadores, notas de acessibilidade separadas por abas (Física, Visual, etc.) e um sistema de avaliação por estrelas 100% acessível (construído com input[type=radio]).
+> O design foi guiado por **três personas principais**, cada uma representando um espectro distinto de acessibilidade e orientando diretamente as decisões de interface.
 
-5. Tela de Comunidade: Um feed social onde utilizadores trocam dicas e relatos, criando uma rede de confiança.
+| Persona | Perfil | Dores Principais | Funcionalidade-Chave |
+|:--------|:------:|:-----------------|:---------------------|
+| 👩‍🦽 **Mariana, 32** | Cadeirante | Rampas falsas, banheiros inadaptados, informação visual enganosa. | Fotos reais e verificadas pela comunidade (na `tela-local`). |
+| 👨‍🦯 **Eduardo, 45** | Deficiente Visual | Sites sem rótulos semânticos, incompatíveis com leitores de tela. | Uso correto de tags ARIA e formulários 100% acessíveis (avaliação por estrelas via `radio`). |
+| 👩‍🦻 **Ana Luiza, 27** | Deficiente Auditiva | Vídeos sem legendas, guias que falam de costas, falta de comunicação visual. | Abas de acessibilidade (ex: "Auditiva") e foco em comunicação textual (posts, avaliações). |
 
-6. Assistente de Acessibilidade: Um botão flutuante (FAB) que abre um modal com opções de Alto Contraste, Aumentar Fonte e Modo Leitura Simplificada (para necessidades cognitivas).
+---
 
-🚀 Stack Tecnológica (Protótipo)
-A seleção de tecnologias foi focada na prototipagem rápida, responsividade e na demonstração de conceitos modernos de frontend.
+## ✨ Funcionalidades do Protótipo
 
-<div style="width: 100%; overflow-x: auto;">   <table width="100%" style="border-collapse: collapse; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">     <thead style="background-color: #444; color: white;">       <tr>         <th style="padding: 12px 15px; text-align: left;">Tecnologia</th>         <th style="padding: 12px 15px; text-align: left;">Propósito (Justificativa da Escolha)</th>       </tr>     </thead>     <tbody style="background-color: #fff; color: #333;">       <tr style="border-bottom: 1px solid #ddd; background-color: #f9f9f9;">         <td style="padding: 12px 15px;"><strong>HTML5</strong></td>         <td style="padding: 12px 15px;">Utilizado para a estruturação semântica do conteúdo (<code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>), fundamental para a acessibilidade e SEO.</td>       </tr>       <tr style="border-bottom: 1px solid #ddd;">         <td style="padding: 12px 15px;"><strong>CSS3 (Vanilla)</strong></td>         <td style="padding: 12px 15px;">           <strong>Design Responsivo:</strong> Adoção da abordagem <em>Mobile-First</em>, com <code>@media queries</code> para Tablet e Desktop.
+> O protótipo implementa **5 telas principais** e diversas funcionalidades de acessibilidade e inclusão.
 
+| Tela | Funcionalidades |
+|:-----|:----------------|
+| 🏠 **Tela Inicial** | Busca por Voz (simulada) e filtros por tipo de deficiência: Física, Visual, Auditiva e Cognitiva. |
+| 🏳️‍🌈 **Filtros de Inclusão** | Expansão para necessidades sociais e alimentares: Vegano, Sem Glúten e LGBTQ+ Friendly. |
+| 🗺️ **Tela de Resultados (Responsiva)** | **Mobile:** alterna entre Mapa Colaborativo (pins coloridos) e Modo Lista (para leitores de tela). **Desktop:** mapa e lista exibidos lado a lado. |
+| 📍 **Tela do Local** | Núcleo da confiança: fotos reais enviadas por usuários, notas de acessibilidade por abas (Física, Visual, etc.) e sistema de avaliação por estrelas 100% acessível. |
+| 💬 **Tela de Comunidade** | Feed social de troca de dicas e relatos, criando uma rede de confiança colaborativa entre usuários. |
+| 🛠️ **Assistente de Acessibilidade** | Botão flutuante (FAB) com modal de opções: Alto Contraste, Aumentar Fonte e Modo Leitura Simplificada (para necessidades cognitivas). |
 
-          <strong>Tematização:</strong> Uso extensivo de <strong>Variáveis CSS</strong> (<code>:root</code>) para gerir o tema (cores, fontes, sombras), permitindo a funcionalidade de "Alto Contraste".         </td>       </tr>       <tr style="border-bottom: 1px solid #ddd; background-color: #f9f9f9;">         <td style="padding: 12px 15px;"><strong>JavaScript (ES6+)</strong></td>         <td style="padding: 12px 15px;">           <strong>Arquitetura SPA:</strong> Simula uma <em>Single Page Application (SPA)</em> trocando o <code>aria-hidden</code> das telas.
+---
 
+## 🛠️ Stack Tecnológica
 
-          <strong>Código Assíncrono:</strong> Usa <code>async/await</code> para simular chamadas de API (<code>simularChamadaAPI</code>).
+> Tecnologias escolhidas com foco em **prototipagem rápida**, **responsividade** e demonstração de conceitos modernos de frontend acessível.
 
+| Tecnologia | Versão | Propósito e Justificativa |
+|:-----------|:------:|:--------------------------|
+| **HTML5** | — | Estruturação **semântica** (`<main>`, `<nav>`, `<section>`, `<fieldset>`) — fundamental para acessibilidade e SEO. |
+| **CSS3 (Vanilla)** | — | **Mobile-First** com `@media queries` para Tablet e Desktop. **Variáveis CSS** (`:root`) para tematização e funcionalidade de Alto Contraste. |
+| **JavaScript ES6+** | — | **Arquitetura SPA** simulada via `aria-hidden`. **Código assíncrono** com `async/await`. **IIFE** para encapsulamento seguro e prevenção de poluição do escopo global. |
+| **Mapbox GL JS** | — | Renderização do mapa interativo com personalização de pins e popups por categoria de acessibilidade. |
 
-          <strong>Escopo Seguro:</strong> Todo o código está encapsulado numa <strong>IIFE</strong> (Immediately Invoked Function Expression) para evitar poluição do escopo global.         </td>       </tr>       <tr style="background-color: #f9f9f9;">         <td style="padding: 12px 15px;"><strong>Mapbox GL JS</strong></td>         <td style="padding: 12px 15px;">Biblioteca de mapas escolhida para a renderização do mapa interativo, permitindo a personalização de pins e popups.</td>       </tr>     </tbody>   </table> </div>
+---
 
-♿ Foco em Acessibilidade e Inclusão (RNF)
-Mais do que uma funcionalidade, a acessibilidade é o requisito principal do projeto. Diversas técnicas de WAI-ARIA e design inclusivo foram implementadas.
+## ♿ Foco em Acessibilidade e Inclusão
 
-<div style="width: 100%; overflow-x: auto;">   <table width="100%" style="border-collapse: collapse; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">     <thead style="background-color: #444; color: white;">       <tr>         <th style="padding: 12px 15px; text-align: left;">Tópico</th>         <th style="padding: 12px 15px; text-align: left;">Implementação</th>         <th style="padding: 12px 15px; text-align: left;">Justificativa (A quem ajuda?)</th>       </tr>     </thead>     <tbody style="background-color: #fff; color: #333;">       <tr style="border-bottom: 1px solid #ddd; background-color: #f9f9f9;">         <td style="padding: 12px 15px;"><strong>Controles de Formulário</strong></td>         <td style="padding: 12px 15px;">O seletor de estrelas (<code>#star-rating-input</code>) é um <code>&lt;fieldset&gt;</code> com <code>&lt;input type="radio"&gt;</code> ocultos e <code>&lt;label&gt;</code>s estilizados.</td>         <td style="padding: 12px 15px;">           <strong>(Ajuda Eduardo)</strong> Garante que utilizadores de leitores de tela ou teclado possam avaliar, pois <code>div</code>s ou <code>span</code>s com JavaScript (como era antes) são inacessíveis.         </td>       </tr>       <tr style="border-bottom: 1px solid #ddd;">         <td style="padding: 12px 15px;"><strong>Semântica e ARIA</strong></td>         <td style="padding: 12px 15px;">Uso extensivo de <code>aria-label</code> (para botões-ícone), <code>aria-hidden</code> (para gerir telas), <code>role="dialog"</code> e <code>aria-modal="true"</code> (para o assistente).</td>         <td style="padding: 12px 15px;">           <strong>(Ajuda Eduardo)</strong> Fornece o contexto que falta aos leitores de tela. O <code>aria-hidden="true"</code> é crucial na arquitetura SPA para focar o utilizador apenas no conteúdo da tela ativa.         </td>       </tr>       <tr style="border-bottom: 1px solid #ddd; background-color: #f9f9f9;">         <td style="padding: 12px 15px;"><strong>Acessibilidade Adaptativa</strong></td>         <td style="padding: 12px 15px;">O modal do assistente (<code>#modal-assistente</code>) ativa/desativa classes no <code>&lt;body&gt;</code> (ex: <code>.high-contrast</code>, <code>.large-font</code>, <code>.reading-mode</code>).</td>         <td style="padding: 12px 15px;">           <strong>(Ajuda Eduardo e Cognitivo)</strong> Permite ao utilizador adaptar a interface às suas necessidades visuais (alto contraste, fonte maior) ou cognitivas (modo de leitura simplificada).         </td>       </tr>       <tr style="border-bottom: 1px solid #ddd;">         <td style="padding: 12px 15px;"><strong>Navegação Alternativa</strong></td>         <td style="padding: 12px 15px;">Botão "Modo Lista" na tela de resultados e simulação de Busca por Voz.</td>         <td style="padding: 12px 15px;">           <strong>(Ajuda Eduardo e Mariana)</strong> Oferece uma alternativa linear (lista) para quem não pode interagir com o mapa visual, e uma alternativa de entrada (voz) para quem tem dificuldade de digitação.         </td>       </tr>       <tr style="background-color: #f9f9f9;">         <td style="padding: 12px 15px;"><strong>Responsividade</strong></td>         <td style="padding: 12px 15px;">Uso de <code>min-width: 44px</code> e <code>min-height: 44px</code> em controlos interativos (botões, toggles).</td>         <td style="padding: 12px 15px;">           <strong>(Ajuda Mariana/Motora)</strong> Garante que os alvos de toque (botões) sejam grandes o suficiente para serem usados com facilidade, em conformidade com as diretrizes da WCAG.         </td>       </tr>     </tbody>   </table> </div>
+> Mais do que uma funcionalidade, a acessibilidade é o **requisito não-funcional principal** do projeto. Diversas técnicas de **WAI-ARIA** e design inclusivo foram aplicadas de forma intencional.
 
-💡 Notas de Arquitetura (Frontend)
+| Tópico | Implementação Técnica | Quem é beneficiado |
+|:-------|:----------------------|:-------------------|
+| 🎛️ **Controles de Formulário** | O seletor de estrelas (`#star-rating-input`) é um `<fieldset>` com `<input type="radio">` ocultos e `<label>`s estilizados — acessível por teclado e leitores de tela. | 👨‍🦯 **Eduardo** — `div`s e `span`s com JS são inacessíveis. |
+| 🏷️ **Semântica e ARIA** | `aria-label` (botões-ícone), `aria-hidden` (gestão de telas), `role="dialog"` e `aria-modal="true"` (assistente de acessibilidade). | 👨‍🦯 **Eduardo** — fornece contexto essencial para leitores de tela na arquitetura SPA. |
+| 🎨 **Acessibilidade Adaptativa** | O modal do assistente ativa classes no `<body>`: `.high-contrast`, `.large-font` e `.reading-mode`. | 👨‍🦯 **Eduardo** e usuários com necessidades cognitivas. |
+| 🔁 **Navegação Alternativa** | Botão "Modo Lista" na tela de resultados e simulação de Busca por Voz. | 👨‍🦯 **Eduardo** e 👩‍🦽 **Mariana** — alternativas para quem não pode interagir com mapa visual ou tem dificuldade de digitação. |
+| 📏 **Alvos de Toque (WCAG)** | Todos os controles interativos possuem `min-width: 44px` e `min-height: 44px`, em conformidade com as diretrizes da **WCAG 2.1**. | 👩‍🦽 **Mariana** e usuários com limitações motoras. |
 
-  1. Arquitetura SPA Simulada: O projeto não recarrega a página. Ele usa JavaScript (a função showScreen) para gerir o estado de visibilidade das diferentes "telas", alterando aria-hidden para true ou false.
+---
 
-  2. API Assíncrona e Robusta: A busca de dados é gerida pela função async/await. Ela chama simularChamadaAPI, que retorna uma Promise.
+## 💡 Notas de Arquitetura (Frontend)
 
-  3. Gestão de Carregamento e Timeout: Para prevenir loaders infinitos, o projeto utiliza:
+### 1️⃣ Arquitetura SPA Simulada
 
-  4. try...catch...finally: Garante que hideLoader() seja sempre chamado, mesmo que a API falhe.
+O projeto **não recarrega a página**. A função `showScreen()` gerencia o estado de visibilidade das telas alternando `aria-hidden` entre `true` e `false`, garantindo que leitores de tela foquem apenas no conteúdo da tela ativa.
 
-  5. Promise.race: Implementa um timeout de 5 segundos, garantindo que o utilizador nunca espere indefinidamente (a simulação demora apenas 1.2s).
+### 2️⃣ API Assíncrona e Robusta
 
-  6. Design Responsivo Híbrido: O CSS não é apenas "mobile". Ele deteta ecrãs de desktop e reorganiza a interface, transformando a barra de navegação inferior num menu lateral e exibindo o mapa e a lista lado a lado. O JavaScript deteta esta alteração e ajusta o seu comportamento (ex: alternarView).
+A busca de dados utiliza `async/await` com a função `simularChamadaAPI()`, que retorna uma `Promise` — preparando a arquitetura para substituição por uma API real sem refatoração estrutural.
+
+### 3️⃣ Gestão de Carregamento e Timeout
+
+| Mecanismo | Função |
+|:----------|:-------|
+| `try...catch...finally` | Garante que `hideLoader()` seja **sempre** executado, mesmo em caso de falha na API. |
+| `Promise.race` | Implementa um **timeout de 5 segundos**, evitando que o usuário espere indefinidamente. A simulação retorna em ≈1.2s. |
+
+### 4️⃣ Design Responsivo Híbrido
+
+O CSS não é apenas "mobile". Em telas Desktop, a interface é reorganizada: a barra de navegação inferior transforma-se em menu lateral e o mapa é exibido lado a lado com a lista. O JavaScript detecta essa mudança e ajusta o comportamento do `alternarView()` dinamicamente.
+
+---
+
+## 🚀 Como Executar
+
+> Por ser um protótipo HTML/CSS/JS puro, a execução é simples e não requer instalação de dependências.
+
+### 📋 Pré-requisitos
+
+| Requisito | Detalhe |
+|:----------|:--------|
+| **Navegador moderno** | Chrome, Firefox, Edge ou Safari (versões recentes). |
+| **Git** | Para clonar o repositório. |
+| **Live Server** *(opcional)* | Extensão do VS Code recomendada para hot-reload. |
+
+### 🔧 Passo a Passo
+
+**1. Clone o repositório:**
+
+```bash
+git clone https://github.com/VictorHJesusSantiago/AcessoTrip.git
+cd AcessoTrip
+```
+
+**2. Abra o projeto:**
+
+```bash
+# Opção A: Direto no navegador
+# Clique duplo no arquivo index.html
+
+# Opção B: Via Live Server (VS Code)
+# Clique com botão direito em index.html → "Open with Live Server"
+```
+
+**3. Acesse o protótipo:**
+
+| Método | Endereço |
+|:-------|:---------|
+| 🖥️ **Arquivo local** | `file:///caminho/para/AcessoTrip/index.html` |
+| 🔴 **Live Server** | `http://localhost:5500` |
+
+> ⚠️ **Nota sobre o Mapbox:** Para o mapa interativo funcionar corretamente, é necessário inserir seu token de API do Mapbox no arquivo `script.js` na variável `mapboxgl.accessToken`.
+
+---
+
+## 📂 Estrutura de Pastas
+
+```plaintext
+AcessoTrip/
+│
+├── 📄 index.html                  # 🏠 Arquivo principal — todas as telas (SPA)
+│
+├── 📁 css/
+│   ├── 📄 style.css               # 🎨 Estilos globais e variáveis CSS (:root)
+│   ├── 📄 tela-inicial.css        # Estilos específicos da tela inicial
+│   ├── 📄 tela-resultados.css     # Estilos do mapa, lista e responsividade
+│   ├── 📄 tela-local.css          # Estilos da ficha do local e abas
+│   ├── 📄 tela-comunidade.css     # Estilos do feed social
+│   └── 📄 assistente.css          # Estilos do FAB e modal do assistente
+│
+├── 📁 js/
+│   ├── 📄 app.js                  # 🧠 IIFE principal — gestão de telas (SPA)
+│   ├── 📄 mapa.js                 # 🗺️  Inicialização e gestão do Mapbox GL JS
+│   ├── 📄 api.js                  # 🔌 Simulação de chamadas de API (async/await)
+│   └── 📄 assistente.js           # ♿ Lógica do assistente de acessibilidade
+│
+└── 📁 assets/
+    └── 📁 img/                    # 🖼️  Imagens e fotos dos locais (mock)
+```
+
+---
+
+## 👨‍💻 Autor
+
+<div align="center">
+
+<br>
+
+**Victor H. J. Santiago**
+
+<br>
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/VictorHJesusSantiago)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/victor-henrique-de-jesus-santiago/)
+
+</div>
+
+---
+
+## 📄 Licença
+
+<div align="center">
+
+Este projeto foi desenvolvido para fins de **estudo e demonstração de conceitos de UX/UI e acessibilidade web**.
+Uso livre para fins educacionais, desde que mantida a atribuição ao autor original.
+
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+
+</div>
+
+---
+
+<div align="center">
+
+*Feito com 💙 e acessibilidade por **Victor H. J. Santiago***
+
+</div>
